@@ -1,2 +1,2 @@
-# Basic Python Programs and a bit of theory.
+Basic Python programs and theory.
 
