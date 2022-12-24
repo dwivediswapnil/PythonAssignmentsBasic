@@ -1,2 +1,2 @@
-# FreshIneuronAssignments
-DS Assignements
+# Basic Python Programs and a bit of theory.
+
