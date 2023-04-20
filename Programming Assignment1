@@ -1,0 +1,48 @@
+import random
+
+class ProgrammingAssignement1:
+    '''Write a Python program to print "Hello Python"?'''
+    def printHelloPython():
+        print("Hello World")
+
+    printHelloPython()
+
+##############################################################
+    def arithmaticOperation():
+        '''Write a Python program to do arithmetical operations addition and division.?'''
+        num1 = 1.5
+        num2 = 6.3
+        # Add two numbers
+        sum = num1 + num2
+        # Display the sum
+        print(f'The sum is {sum}')
+    arithmaticOperation()
+
+####################################################
+    def areaOfTriangle():
+        '''Write a Python program to find the area of a triangle?'''
+        height=12.0
+        breadth=13.0
+        area=1/2*breadth*height
+        print(f'Area is {area}')
+    areaOfTriangle()
+
+#################################################
+    def swapTwoVariables():
+        '''Write a Python program to swap two variables?'''
+        a=2
+        b=3
+        temp=""
+        temp=a
+        a=b
+        b=temp
+        print(a)
+        print(b)
+    swapTwoVariables()
+
+###################################################
+    def randomNumber():
+        '''Write a Python program to generate a random number?'''
+        num= random.random()
+        print(num)
+    randomNumber()
