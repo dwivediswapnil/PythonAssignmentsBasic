@@ -1,0 +1,51 @@
+import calendar
+import cmath
+
+class ProgrammingAssignement2:
+    def conversionOfKmTom():
+        '''Write a Python program to convert kilometers to miles?'''
+        valueInkm = int(input())
+        valueinM = valueInkm * 1000
+        print(f'Value in m is {valueinM}')
+
+    conversionOfKmTom()
+    ###############################################
+    def conversionOfCToF():
+        '''Celsius to Fahrenheit?'''
+        valueInCelsius = int(input())
+        valueinF = (valueInCelsius * 1.8) + 32
+        print(f'Value in m is {valueinF}')
+
+    conversionOfCToF()
+
+    ##################################################
+    def displayCalender():
+        '''Write a Python program to display calendar?'''
+        yyyy = int(input("Enter the year"))
+        mm = int(input("Enter the month"))
+
+        # display the calender
+        print(calendar.month(yyyy, mm))
+    displayCalender()
+    ##################################################
+    def quadraticEquation():
+        '''Write a Python program to solve quadratic equation?'''
+        b=2
+        a=3
+        c=7
+        d= b*b-4*a*c
+        sol1=(-b-cmath.sqrt(d))/(2*a)
+        sol2=(-b+cmath.sqrt(d))/(2*a)
+        # print(f'The solution are {sol1},{sol2}')
+        print('The solution are {0} and {1}'.format(sol1, sol2))
+    quadraticEquation()
+    ################################################
+    def swapWithoutTempVariable():
+        '''Write a Python program to swap two variables without temp variable?'''
+        x=2
+        y=3
+        x,y=y,x
+        print("x=",x)
+        print("y=",y)
+    swapWithoutTempVariable()
+    ###############################################
