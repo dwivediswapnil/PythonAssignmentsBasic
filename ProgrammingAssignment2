@@ -1,7 +1,7 @@
 import calendar
 import cmath
 
-class ProgrammingAssignement2:
+class ProgrammingAssignment2:
     def conversionOfKmTom():
         '''Write a Python program to convert kilometers to miles?'''
         valueInkm = int(input())
