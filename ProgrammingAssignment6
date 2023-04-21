@@ -1,0 +1,33 @@
+class ProgrammingAssignment6:
+
+    def bmi_cal():
+        """Write a Python Program to calculate your Body Mass Index?"""
+        height = int(input("Enter your height(cm) : "))
+        weight = int(input("Enter your weight(kg) : "))
+        bmi = weight/((height/100)**2)
+        print("Your BMI is : ",bmi)
+        if bmi < 18.5:
+            print("You are underweight !")
+        elif bmi < 24.9:
+            print("You are healthy !")
+        elif bmi > 29.9:
+            print("You are overwight !")
+        else:
+            print("You are obese !")
+
+    bmi_cal()
+    #####################################################################
+    def getNaturalLog():
+        """Write a Python Program to calculate the natural logarithm of any number?"""
+        number= int(input("Enter the number : "))
+        print(math.log(number))
+    getNaturalLog()
+    ####################################################################
+    def cubeSum(n):
+        """Write a Python Program for cube sum of first n natural numbers?"""
+        sum=0
+        for i in range(1,n+1):
+            sum=sum+i**3
+        return sum
+    print(cubeSum(5))
+    ######################################################################
