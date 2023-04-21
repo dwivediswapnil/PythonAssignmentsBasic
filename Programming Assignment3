@@ -1,4 +1,4 @@
-class ProgrammingAssignement2:
+class ProgrammingAssignement3:
     def positiveNegativeOrZeroValue():
         """Write a Python Program to Check if a Number is Positive, Negative or Zero?"""
         a = int(input())
