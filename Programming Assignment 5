@@ -1,4 +1,4 @@
-class ProgrammingAssignement5:
+class ProgrammingAssignment5:
     ###################################################
     def getLCM(x, y):
         """Write a Python Program to Find LCM?"""
