@@ -1,0 +1,68 @@
+class ProgrammingAssignement5:
+    ###################################################
+    def getLCM(x, y):
+        """Write a Python Program to Find LCM?"""
+        # the smallest positive integer that is perfectly divisible by 2 given numbers
+        if x > y:
+            greater = x
+        else:
+            greater = y
+
+        while True:
+            if greater % x == 0 and greater % y == 0:
+                lcm = greater
+                break
+            greater += 1
+        return lcm
+
+    print(getLCM(54, 24))
+
+    ####################################################
+    def getHCF(x, y):
+        """Write a Python Program to Find HCF?"""
+        # largest positive integer that perfectly divides 2 given numbers
+        if x > y:
+            smaller = y
+        else:
+            smaller = x
+        for i in range(1, smaller + 1):
+            if x % i == 0 and y % i == 0:
+                hcf = i
+        return hcf
+
+    print(getHCF(12, 14))
+
+    #####################################################
+    def conversion():
+        """Write a Python Program to Convert Decimal to Binary, Octal and Hexadecimal?"""
+
+    dec = 32
+    print("Binary value: ", bin(dec))
+    print("Octal value: ", oct(dec))
+    print("Hexadecimal value: ", hex(dec))
+
+    #####################################################
+    def asciiValue(value):
+        """Write a Python Program To Find ASCII value of a character?"""
+
+        print("ascii value: ", ord(value))
+
+    asciiValue("a")
+
+    ######################################################
+    def calculator(value):
+        """Write a Python Program to Make a Simple Calculator with 4 basic mathematical operations?"""
+
+        a = 10
+        b = 20
+        if value == "addition":
+            return a + b
+        elif value == "subtract":
+            return a - b
+        elif value == "division":
+            return a / b
+        elif value == "multiplication":
+            return a * b
+
+    print(calculator("addition"))
+    #######################################################
