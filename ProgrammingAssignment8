@@ -1,0 +1,88 @@
+import math
+from os.path import join
+
+
+class ProgrammingAssignment8:
+    def additionOfTwoMatrices(arr1, arr2):
+        """Write a Python Program to Add Two Matrices?"""
+
+    arr1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    arr2 = [[2, 3, 4], [5, 65, 5], [2, 5, 8]]
+    result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    additionOfTwoMatrices(arr1, arr2)
+    for i in range(0, len(arr1)):
+        for j in range(0, len(arr1[0])):  # arr1[0] will select the first row
+            result[i][j] = arr1[i][j] + arr2[i][j]
+
+    for r in result:
+        print(r)
+
+    ###########################################################################
+    def multiplicationOfTwoMatrices(arr1, arr2):
+        """Write a Python Program to Multiply Two Matrices?"""
+
+    arr1 = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]]
+    arr2 = [[2, 3, 4],
+            [5, 2, 5],
+            [2, 5, 8]]
+    result = [[0, 0, 0],
+              [0, 0, 0],
+              [0, 0, 0]]
+    # iterate through rows of arr1
+    for i in range(0, len(arr1)):
+
+        # iterate through columns of arr2
+        for j in range(0, len(arr1[0])):
+
+            # iterate through the rows of arr2.
+            for k in range(0, len(arr2)):
+                result[i][j] += arr1[i][k] * arr2[k][j]
+
+    for r in result:
+        print(r)
+    #################################################################################
+    def transposeMatrix():
+        """Write a Python Program to Transpose a Matrix?"""
+        arr1 = [[1, 2],
+                [4, 5],
+                [7, 8]]
+
+        result = [[0, 0, 0],
+                  [0, 0, 0]]
+
+        for i in range(len(arr1)):#rows
+            for j in range(0, len(arr1[0])):#columns
+                result[j][i] = arr1[i][j]
+
+        for r in result:
+            print(r)
+
+    transposeMatrix()
+    ##############################################################
+    def sortAlphabets(str):
+        """Write a Python Program to Sort Words in Alphabetic Order?"""
+        words=str.split(" ")
+        for i in range(len(words)):
+           #converting all words to lower case
+           words[i]=words[i].lower()
+        str=sorted(words)
+        print(" ".join(str))
+
+    str="The quick brown film"
+    sortAlphabets(str)
+    ################################################################
+    def removePunctuation():
+        """Write a Python Program to Remove Punctuation From a String?"""
+        punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+
+        my_str = "Hello!!!, he said ---and went."
+        no_punct = " "
+        for char in my_str:
+            if char not in punctuations:
+                no_punct = no_punct + char
+        print(no_punct)
+
+    removePunctuation()
+    ###############################################################
