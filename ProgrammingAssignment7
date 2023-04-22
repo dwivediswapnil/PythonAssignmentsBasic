@@ -1,0 +1,65 @@
+class ProgrammingAssignment7:
+
+    def sumOfArray():
+        """Write a Python Program to find sum of array?"""
+        sum = 0
+        arr = [1, 2, 3, 4, 5]
+        for i in arr:
+            sum = sum + i
+        return sum
+
+    print(sumOfArray())
+
+    #########################################################
+    def getLargestElement():
+        """Write a Python Program to find largest element in an array?"""
+        arr = [1, 2, 3, 4, 5, 6, 7]
+
+        # initialize "largest" with first element of array
+        largest = arr[0]
+        for i in range(0, len(arr)):
+            if arr[i] > largest:
+                largest = arr[i]
+
+        print("largest element : ", largest)
+
+    getLargestElement()
+
+    ##########################################################
+    def arrayRotation(arr, d):
+        """Write a Python Program for array rotation?"""
+        length = len(arr)
+        arr[:] = arr[d:length] + arr[0:d]
+        return arr
+
+    arr = [1, 2, 3, 7, 8, 9]
+    print(arrayRotation(arr, 1))
+
+    ###########################################################
+    def splitArray():
+        """Write a Python Program to Split the array and add the first part to the end?"""
+        arr = [1, 2, 3, 4, 5, 6, 67, 33]
+        position = 2
+        x = arr[:position]
+        y = arr[position:]
+        print(y.extend(x))
+        for i in y:
+            print(i, end=" ")
+
+    splitArray()
+
+    ##############################################################
+    def monotonicArray(arr):
+        """Write a Python Program to check if given array is Monotonic?"""
+        x, y = [], []
+        y.extend(arr)
+        x.extend(arr)
+        y.sort()
+        x.sort(reverse=True)
+        if y == arr or x == arr:
+            return True
+        return False
+
+    arr = [6, 5, 4, 4]
+    print(monotonicArray(arr))
+    ##############################################################
