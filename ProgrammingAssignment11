@@ -1,0 +1,79 @@
+import re
+class ProgrammingAssignment11:
+    def wordsGreaterThanGivenLength(fixLength):
+        """Write a Python program to find words which are greater than given length k?"""
+        str="The englisjdkjns skdsj sdkjs dsjjs"
+        words =  str.split(" ")
+        for i in range(len(words)):
+            words[i]=words[i].lower()
+            if len(words[i])>fixLength:
+                print("".join(words[i]),end=" ")
+
+    wordsGreaterThanGivenLength(5)
+    ######################################################################################
+    def removeIthCharacter(i):
+        """Write a Python program for removing i-th character from a string?"""
+        str="Swapnil"
+        a=str[:i]
+        b=str[i+1:]
+        print(a+b)
+
+    removeIthCharacter(3)
+    ######################################################################################
+    def splitAndjoin():
+        """Write a Python program to split and join a string?"""
+        str="Swapnil is hard working"
+        print(str)
+        str1=str.split(" ")
+        str2="-".join(str1)
+        print(str2)
+    splitAndjoin()
+    ######################################################################################
+    def binaryString(string):
+        """Write a Python to check if a given string is binary string or not?"""
+        b = set(string)#will remove the duplicates as set do not supports duplicate
+        print(b)
+        s = {'0', '1'}
+        if s == b or b == {'0'} or b == {'1'}:
+            print("Binary String")
+        else:
+            print("Non Binary String")
+
+    s1 = "00110101"
+    # function calling
+    binaryString(s1)
+    s2 = "1010100200111"
+    binaryString(s2)
+    #######################################################################################
+    def uncommonWords():
+        """Write a Python program to find uncommon words from two Strings?"""
+        s1="My name is Swapnil"
+        s2="My name is Bill gates"
+        t1=set(s1.split(" "))
+        t2=set(s2.split(" "))
+        uncommonWords = t1.difference(t2).union(t2.difference(t1))
+        print("Uncommon words:",list(uncommonWords))
+    uncommonWords()
+    #######################################################################################
+    def duplicateCharactersInString():
+        """Write a Python to find all duplicate characters in string?"""
+        s1 = "Swapnilii"
+        dups=[]
+        for ch in s1:
+            if s1.count(ch)>1 and ch not in dups:
+                dups.append(ch)
+        print(dups)
+
+    duplicateCharactersInString()
+    #######################################################################################
+    def containingSpecialCharacters():
+        """Write a Python Program to check if a string contains any special character?"""
+        str = input("Enter the string ")
+        # special characters
+        special_char = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
+        if special_char.search(str) == None:
+            print("String do not contains special characters")
+        else:
+            print("String contains special characters")
+    containingSpecialCharacters()
+    #######################################################################################
