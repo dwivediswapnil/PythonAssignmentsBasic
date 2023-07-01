@@ -1,0 +1,46 @@
+# Write a Python program to convert kilometers to miles?
+# def convert_km_to_miles(value):
+#     return 0.621371 * value
+
+# print(f'Converted value to miles:',convert_km_to_miles(23))    
+###############################################################
+# Write a Python program to convert Celsius to Fahrenheit?
+# def celsius_To_Fahrenheit(celsius_value):
+#      return 1.8 * celsius_value + 32
+
+# celsius_value = 56    
+# print(f'fahrenheit equivalent of ${celsius_value} is :',{celsius_To_Fahrenheit(32)})    
+#####################################################################################
+# Write a Python program to display calendar?
+# import calendar
+
+# def print_calendar(yy,mm):
+#  return calendar.month(yy,mm)
+ 
+# yy=2013
+# mm=9
+# print("Calender is: ",print_calendar(2013,9))
+#####################################################################################
+# Write a Python program to solve quadratic equation?
+# import cmath
+# def quadratic(a,b,c):
+#     discriminant = b**2-4*a*c
+#     sol1 = (-b-cmath.sqrt(discriminant))/(2*a)
+#     sol2 = (-b+cmath.sqrt(discriminant))/(2*a)
+#     print(f'First solution: ', sol1)
+#     print(f'Second solution: ', sol2)
+
+# a=1
+# b=5
+# c=6
+# quadratic(a,b,c)
+######################################################################################
+# Write a Python program to swap two variables without temp variable?
+
+# def swapVariables(a,b):
+#     print(f'Values before swapping : ${a},${b}')
+#     a,b=b,a
+#     print(f'Values after swapping : ${a},${b}')
+#     return a,b
+
+# swapVariables(2,3)
