@@ -1,0 +1,39 @@
+# "Write" a Python program to print "Hello Python"?"
+# print("Hello Python")
+# ===========================================================================
+
+#Write a Python program to do arithmetical operations addition and division.?
+# def addition(a,b):
+#     return a+b
+    
+# def division(a,b):
+#     return a/b
+    
+# print(f'Addition of 3 and 2 results in: {addition(3,2)}')    
+# print(f'Division of 3 and 2 results in: {division(3,2)}')    
+# ==========================================================================
+
+# # Write a Python program to find the area of a triangle?
+# def areaOfTriangle(b,h):
+#     return 0.5*b*h
+
+# print(f'Area of triangle having base and height is : {areaOfTriangle(1,2)}')   
+# ==========================================================================
+
+# Write a Python program to swap two variables?
+# def swapVariables(a,b):
+#     print(f'Values before swapping : ${a},${b}')
+#     a,b=b,a
+#     print(f'Values after swapping : ${a},${b}')
+#     return a,b
+
+# swapVariables(2,3)
+#============================================================================
+
+# Write a Python program to generate a random number?   
+# import random
+# def randNumber(a,b):
+#     return random.randint(a,b)
+    
+# print(f'This time random number generated is : {randNumber(0,9)}')
+#============================================================================
